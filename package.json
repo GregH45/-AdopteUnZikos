@@ -1,0 +1,21 @@
+{
+  "name": "adopteUnZikos",
+  "version": "1.0.0",
+  "description": "Concert virtuel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/babel-cli/bin/babel.js client/src/js -d client/www/res/js ; ./node_modules/node-sass/bin/node-sass -r client/src/scss -o client/www/res/css",
+    "start": "node server/main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {
+    "express": "4.15.3",
+    "socket.io": "^2.0.4"
+  }
+}
